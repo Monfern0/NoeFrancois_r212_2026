@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <span class="titre">Portfolio</span>
+    <nav>
+      <ul>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="btn-theme" aria-label="Activer le mode sombre">🌙</button>
+  </header>
+
+  <main>
+
+    <section class="intro">
+      <h1>Bienvenue sur mon portfolio</h1>
+      <p>Étudiante en MMI, passionnée par le web.</p>
+    </section>
+
+    <section id="projets">
+      <h2>Mes projets</h2>
+
+      <div class="filtres">
+        <button class="filtre actif" data-tag="tous">Tous</button>
+        <button class="filtre" data-tag="HTML">HTML</button>
+        <button class="filtre" data-tag="CSS">CSS</button>
+        <button class="filtre" data-tag="JS">JS</button>
+      </div>
+
+      <div class="grille" id="grille"></div>
+    </section>
+
+  </main>
+
+  <div id="modale" aria-hidden="true">
+    <div class="modale-contenu">
+      <button id="modale-fermer" aria-label="Fermer">×</button>
+      <div id="modale-body"></div>
+    </div>
+  </div>
+
+  <footer id="contact">
+    <p>© 2026 — Mon portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
